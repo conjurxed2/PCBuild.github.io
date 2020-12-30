@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PCBuild</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <script>
+      AOS.init();
+    </script>
+
+    <nav
+      class="navbar navbar-expand-md bg-custom navbar-custom sticky-top"
+      id="nav"
+    >
+      <div
+        class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./comprar.html">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cuidado.html">Información</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="./index.html">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".dual-collapse2"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./socios.html">Socios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container aviso-tienda">
+      <div class="row">
+        <div class="col-md-12" style="margin-top:40px">
+          <p>
+            Bienvenido a nuestra página de compra de prueba, por razones
+            legales, no puedes comprar directamente desde la web, pero todas los
+            productos que aparecen a continuacion estan en stock. ¡Contactanos para
+            comprar la que quieras!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container-fluid galeria" id="galeria">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord1.jpg" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord2.jpg" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord3.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord4.jpg" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord5.jpg" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord6.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord7.jpg" />
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="./src/images/shopImages/ord8.jpg" />
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content img-fluid" id="modalImg" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <hr />
+    <footer>
+      <div class="container-fluid">
+        <div class="row" style="text-align:center;">
+          <div class="col-md-4">
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center py-3">
+          Llámanos!
+          <i class="fas fa-phone"></i>
+          <span id="phoneNumber">+34 699682030</span>
+        </div>
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright:
+          <a href="#"> PCBuild.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/shop.js"></script>
+  </body>
+</html>

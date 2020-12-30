@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PCBuild</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-custom navbar-custom fixed-top"
+      id="nav"
+    >
+      <div
+        class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./comprar.html">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cuidado.html">Información</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="./index.html">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".dual-collapse2"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./socios.html">Socios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron custom-jumbotron">
+      <h1>¿Qué necesitas?</h1>
+      <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <form
+            class="contactoForm"
+            id="formularioContacto"
+            action="https://postman-echo.com/get"
+            method="GET"
+          >
+            <div class="form-group" id="name">
+              <label for="name">Nombre</label> <br />
+              <input
+                type="text"
+                name="name"
+                data-toggle="popover"
+                class="form-control"
+                title="Popover Header"
+                data-content="Some content inside the popover"
+              />
+            </div>
+            <div class="form-group" id="surname">
+              <label for="surname">Apellido</label> <br />
+              <input
+                type="text"
+                name="surname"
+                data-toggle="popover"
+                class="form-control"
+                title="Popover Header"
+                data-content="Some content inside the popover"
+              />
+            </div>
+
+            <div class="form-group" id="email">
+              <label for="email">Email de contacto</label> <br />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                data-toggle="popover"
+                title="Popover Header"
+                data-content="Some content inside the popover"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-md-4 mapClass">
+          <h4>¿Donde estamos?</h4>
+          <div id="mapid"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <div class="container-fluid">
+        <div class="row" style="text-align:center;">
+          <div class="col-md-4">
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center py-3">
+          Llámanos!
+          <i class="fas fa-phone"></i>
+          <span id="phoneNumber">+34 699682030</span>
+        </div>
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright:
+          <a href="#"> PCBuild.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/map.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

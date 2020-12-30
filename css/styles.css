@@ -1,0 +1,323 @@
+/* https://coolors.co/46351d-f4e8c1-f0f7ee-63ccca-d9e5d6 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+a {
+  color: inherit;
+}
+
+/* NAVBAR */
+
+.navbar-custom {
+  overflow-x: visible;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-bottom-color: rgb(210, 210, 210);
+}
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.call {
+  margin-top: 20px;
+}
+
+/* CAROUSEL */
+
+.carousel-inner img {
+  width: 100%;
+}
+
+/* CARDS */
+.custom-col {
+  background-color: #d9e5d6;
+}
+
+.cards-container {
+  padding-top: 3vh;
+}
+.alpacaPic {
+  height: 480px;
+}
+
+.fa-bars {
+  color: #46351d;
+}
+
+.custom-btn {
+  color: #46351d;
+  background-color: #d9e5d6;
+  border-color: #d9e5d6;
+}
+
+.custom-container {
+  padding: 0px;
+}
+
+.custom-jumbotron {
+  color: #46351d;
+  margin-top: 55px;
+}
+.right-col {
+  float: right;
+}
+
+/* CONTACTO */
+
+.contactoForm {
+  margin: 0% 5% 0% 5%;
+  color: #46351d;
+}
+.campo-erroneo {
+  margin-top: 15px;
+}
+
+.jumbo-right {
+  text-align: right;
+}
+.cookiealert-container {
+  width: 100%;
+}
+.col-left,
+.col-right {
+  background-color: #d9e5d6;
+  margin-top: 2%;
+  padding: 3%;
+  border-radius: 10px;
+  color: #46351d;
+}
+
+.col-left {
+  margin-left: 2%;
+}
+
+.col-left img {
+  margin-top: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.col-right {
+  margin-right: 2%;
+}
+
+.col-right img {
+  margin-top: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.proyects img {
+  width: 100%;
+}
+
+.cuidadoFooter {
+  background-color: rgb(186, 212, 236);
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+  color: #46351d;
+}
+.row-inicio {
+  margin-top: 12px;
+}
+
+.row-left h3 {
+  margin-left: 10px;
+}
+.row-left a {
+  margin-left: 10px;
+}
+.row-left p {
+  margin-left: 10px;
+}
+
+.cuidado img {
+  width: 100%;
+}
+@media all and (min-device-width: 2000px) {
+  * {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-device-width: 576px) {
+  .custom-col {
+    padding: 0px;
+    margin-top: 15px;
+  }
+  .caption p {
+    font-size: 15px;
+  }
+  .row-left h3 {
+    margin-left: 0px;
+  }
+  .row-left a {
+    margin-left: 0px;
+  }
+  .row-left p {
+    margin-left: 0px;
+  }
+
+  .mapClass {
+    margin-top: 20px;
+  }
+  .proyect {
+    margin-top: 10px;
+  }
+
+  footer i {
+    margin-top: 30px;
+  }
+  .caption h1 {
+    font-size: 30px !important;
+  }
+  .carousel-inner h1 {
+    font-size: 18px;
+  }
+  .carousel-inner p {
+    font-size: 10px;
+  }
+}
+
+#mapid {
+  height: 300px;
+}
+
+.proyects {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carrousel-lower-text {
+  height: 200px;
+  text-align: center;
+}
+
+.cuidado-titulo {
+  color: rgb(146, 190, 232);
+}
+
+.testimonios {
+  margin-top: 30px;
+}
+.testimonios-titulo {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 2px solid rgb(146, 190, 232);
+  border-bottom: 2px solid rgb(146, 190, 232);
+}
+
+.aviso-tienda {
+  text-align: center;
+}
+.alert {
+  margin-bottom: 0px;
+}
+.galeria img {
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+.galeria img:hover {
+  opacity: 0.5;
+}
+#barraaceptacion {
+  background-color: rgba(175, 175, 175, 0.8);
+}
+
+/* Style the Image Used to Trigger the Modal */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 70%;
+}
+
+#galeria img {
+  width: 100%;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.video-explicativo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.testimonio-jumbo {
+  height: 100%;
+}
+/*------------------------*/
